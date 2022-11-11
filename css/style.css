@@ -7,23 +7,21 @@
 
 aside {
     width: 200px;
-    height: calc(100vh - 100px);
     background-color: #000000;
-    overflow-y: auto;
 }
 
 main {
-    width: calc(100vw - 200px);
+    width: calc(100vw - 100px);
     background-color: #141922;
 }
 
 .main-section {
-    overflow-y: auto;
+    overflow: auto;
 }
 header {
     width: calc(100vw - 200px);
     height: 100px;
-    background-color: rgba(8,11,18,255);
+    background-color: rgba(8,11,18,0.4);
     position: fixed;
     z-index: 1;
 }
@@ -111,7 +109,15 @@ p {
     padding: 20px 10px;
 }
 
+#logo-small {
+    display: none;
+}
+
 /*SIDEBAR PLAYLIST SECTION*/
+
+.mobile-list {
+   display: none;
+}
 
 .head-playlist-section{
     display: flex;
@@ -309,7 +315,7 @@ width: 30%;
 }
 
 .col-footer-40 {
-    width: 38%;
+    width: 40%;
 }
 
 .content-footer img {
@@ -367,11 +373,23 @@ width: 30%;
         width: calc(100vw - 50px);
     }
 
-    .head-sidebar {
+    .head-sidebar span{
         display: none;
+        
     }
     .head-playlist-section {
         display: none;
     }
+
+    .head-img img{
+        display: none;
+    }
+
+    #logo-small {
+        display: inline;
+        width: 30px;
+    }
+   
+
 
 }
