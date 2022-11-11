@@ -55,6 +55,10 @@ p {
     padding: 10px;
 }
 
+.margin-right {
+    margin-right: 20px;
+}
+
 .margin-top-20 {
     margin-top: 20px;
 }
@@ -210,7 +214,7 @@ header a {
 .row-recently-played {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
@@ -225,6 +229,42 @@ header a {
 .playlist-img img {
     width: 200px;
     height: 200px;
+}
+
+/*FOR YOU SECTION*/
+
+.container-for-you {
+    width: 100%;
+}
+
+.row-for-you {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-for-you {
+    text-align: center;
+    margin: 0px 10px;
+}
+
+
+/*ARTIST SECTION*/
+
+.container-artists-section {
+    width: 100%;
+}
+
+.row-artists-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-artists-section {
+    text-align: center;
+    margin: 0px 10px;
+}
+.col-artists-section img {
+    border-radius: 50%;
 }
 
 /*MEDIA QUERY*/
