@@ -36,6 +36,44 @@ p {
     color: white;
 }
 
+
+/*UTILITY*/
+
+.text-white {
+    color: white;
+}
+
+/*SIDEBAR*/
+/*SIDEBAR HEAD SECTION*/
+.head-sidebar ul {
+    list-style-type: none;
+    color: #7d7f84;
+}
+
+.head-sidebar li {
+    padding: 10px;
+}
+
+
+.head-sidebar img {
+    width: 150px;
+    vertical-align: bottom;
+}
+.head-sidebar li img {
+    width: 20px;
+}
+
+.head-img {
+    padding: 20px 10px;
+}
+
+/*SIDEBAR PLAYLIST SECTION*/
+
+.playlist-head-section h4 {
+    padding: 10px;
+}
+
+
 /*MEDIA QUERY*/
 
 @media screen and (max-width: 576px) {
