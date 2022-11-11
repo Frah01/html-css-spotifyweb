@@ -5,29 +5,35 @@
 }
 
 aside {
-    width: 150px;
-    height: 400px;
-    background-color: red;
+    width: 200px;
+    height: calc(100vh - 100px);
+    background-color: #000000;
 }
 
 main {
-    width: calc(100vw - 150px);
-    height: 400px;
-    background-color: orange;
+    width: calc(100vw - 200px);
+    
+    background-color: #141922;
 }
 header {
-    width: calc(100vw - 150px);
+    width: calc(100vw - 200px);
     height: 100px;
-    background-color: cyan;
+    background-color: rgba(8,11,18,255);
+    position: fixed;
+    z-index: 1;
 }
 
 footer {
     height: 100px;
-    background-color: brown;
+    background-color: #282828;
 }
 
 .sidebar-main {
     display: flex;
+}
+
+p {
+    color: white;
 }
 
 /*MEDIA QUERY*/
