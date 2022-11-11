@@ -14,8 +14,11 @@ aside {
 
 main {
     width: calc(100vw - 200px);
-    
     background-color: #141922;
+}
+
+.main-section {
+    overflow-y: auto;
 }
 header {
     width: calc(100vw - 200px);
@@ -46,6 +49,14 @@ p {
 
 .text-white {
     color: white;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
 }
 
 .margin-top-120 {
@@ -186,6 +197,34 @@ header a {
 .nav-container li {
     margin: 10px;
     cursor: pointer;
+}
+
+
+/*RECENTLY PLAYED SECTION*/
+
+
+.container-recently-played {
+    width: 100%;
+}
+
+.row-recently-played {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.col-recently-played {  
+    text-align: center;
+}
+
+.playlist-img {
+    object-fit: contain;
+}
+
+.playlist-img img {
+    width: 200px;
+    height: 200px;
 }
 
 /*MEDIA QUERY*/
