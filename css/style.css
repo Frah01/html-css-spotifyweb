@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 aside {
     width: 200px;
     height: calc(100vh - 100px);
     background-color: #000000;
+    overflow-y: auto;
 }
 
 main {
@@ -44,6 +46,10 @@ p {
 
 .text-white {
     color: white;
+}
+
+.margin-top-120 {
+    margin-top: 120px;
 }
 
 /*SIDEBAR*/
@@ -91,7 +97,9 @@ p {
 .head-playlist-section ul {
     list-style-type: none;
     color: #7d7f84;
+    overflow-y: auto;
 }
+
 
 .head-playlist-section li {
     padding: 10px;
@@ -122,7 +130,71 @@ p {
     font-weight: bold;
 }
 
+/*HEADER*/
+
+.header-container {
+    width: 100%;
+}
+
+.header-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.header-col {
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+
+/*NAV BAR*/
+
+.nav-container {
+    width: 100%;
+}
+
+.nav-row {
+    margin: 0 auto;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-container ul {
+    display: flex;
+    list-style-type: none;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.nav-container li {
+    margin: 10px;
+    cursor: pointer;
+}
+
 /*MEDIA QUERY*/
+
+@media screen and (max-width: 768px) {
+    .nav-container ul {
+        flex-wrap: wrap;
+}
+}
 
 @media screen and (max-width: 576px) {
     aside {
@@ -139,4 +211,5 @@ p {
     .head-playlist-section {
         display: none;
     }
+
 }
