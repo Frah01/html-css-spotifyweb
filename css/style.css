@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside {
+    width: 150px;
+    height: 400px;
+    background-color: red;
+}
+
+main {
+    width: calc(100vw - 150px);
+    height: 400px;
+    background-color: orange;
+}
+header {
+    width: calc(100vw - 150px);
+    height: 100px;
+    background-color: cyan;
+}
+
+footer {
+    height: 100px;
+    background-color: brown;
+}
+
+.sidebar-main {
+    display: flex;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 576px) {
+    aside {
+        width: 50px;
+    }
+
+    main, header {
+        width: calc(100vw - 50px);
+    }
+}
