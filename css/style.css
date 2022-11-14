@@ -327,6 +327,7 @@ header a:hover {
 
 .opacity-play-button-background:hover {
    opacity: 1;
+   cursor: pointer;
 }
 /*FOR YOU SECTION*/
 
