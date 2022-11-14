@@ -8,7 +8,6 @@
 aside {
     width: 200px;
     background-color: #000000;
-    overflow: auto;
     height: calc(100vh - 100px);
 }
 
@@ -17,10 +16,14 @@ main {
     height: calc(100vh - 100px);
     background-color: #141922;
     overflow: auto;
+    
 }
 
 .main-section {
-    
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    overflow: auto;
 }
 header {
     width: calc(100vw - 200px);
@@ -32,6 +35,7 @@ header {
 
 footer {
     height: 100px;
+    width: 100vw;
     background-color: #282828;
 }
 
@@ -69,6 +73,10 @@ p {
     padding: 10px;
 }
 
+
+.margin-left-10 {
+    margin-left: 10px;
+}
 .margin-left-40 {
     margin-left: 40px;
 }
@@ -119,6 +127,10 @@ p {
 
 /*SIDEBAR PLAYLIST SECTION*/
 
+.head-playlist-section .first-col {
+    overflow: auto;
+}
+
 .mobile-list {
    display: none;
 }
@@ -127,6 +139,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
 }
 
 .head-playlist-section h4 {
@@ -142,19 +155,30 @@ p {
 .head-playlist-section ul {
     list-style-type: none;
     color: #7d7f84;
-    overflow-y: auto;
 }
 
+.playlist-overflow {
+    overflow: auto;
+}
 
 .head-playlist-section li {
     padding: 10px;
 }
 
 .head-playlist-section .second-col img {
-    width: 20px;
     vertical-align: bottom;
-    margin: 5px 0px 0px 5px;
 }
+
+.user-img {
+    width: 20px;
+    height: 20px;
+
+}
+
+.download-img {
+    width: 20px;
+}
+
 .head-playlist-section hr {
     border-color: #7d7f84;
     width: 90%;
@@ -175,6 +199,16 @@ p {
     font-weight: bold;
 }
 
+.head-playlist-section li:hover {
+    color: white;
+    cursor: pointer
+    ;
+}
+
+.head-playlist-section span:hover {
+    color: white;
+    cursor: pointer;
+}
 /*HEADER*/
 
 .header-container {
@@ -199,9 +233,13 @@ header a {
     color: white;
     padding: 10px 30px;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid grey;
     border-radius: 20px;
     margin-right: 10px;
+}
+
+header a:hover {
+    border: 2px solid white;
 }
 
 
@@ -233,6 +271,10 @@ header a {
     cursor: pointer;
 }
 
+.nav-container li:hover {
+    color: white;
+}
+
 
 /*RECENTLY PLAYED SECTION*/
 
@@ -254,6 +296,7 @@ header a {
 
 .playlist-img {
     object-fit: contain;
+    position: relative;
 }
 
 .playlist-img img {
@@ -261,6 +304,27 @@ header a {
     height: 200px;
 }
 
+.opacity-play-button-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8,11,18,0.4);
+    opacity: 0;
+}
+
+.opacity-play-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+   
+   
+}
+
+.opacity-play-button-background:hover {
+   opacity: 1;
+}
 /*FOR YOU SECTION*/
 
 .container-for-you {
@@ -322,13 +386,18 @@ width: 30%;
     width: 40%;
 }
 
-.content-footer img {
+.content-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-footer-30 img {
     width: 50px;
     margin-left: 10px;
     vertical-align: center
 }
 
-.col-footer-30 .content-footer  {
+.col-footer-30 .content-col-footer-30  {
     display: flex;
     align-items: center;
 }
@@ -359,6 +428,37 @@ width: 30%;
     padding: 10px;
 }
 
+.second-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.second-card-footer span {
+    color: grey;
+}
+
+.song-bar {
+    width: 80%;
+    height: 5px;
+    background-color: grey;
+    border-radius: 10px;
+    margin: 5px;
+    
+}
+
+.volume-bar {
+    width: 150px;
+    height: 5px;
+    background-color: grey;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.content-col-footer-30 {
+    width: 100%;
+}
 
 /*MEDIA QUERY*/
 
@@ -368,7 +468,7 @@ width: 30%;
 }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 605px) {
     aside {
         width: 50px;
     }
@@ -381,7 +481,15 @@ width: 30%;
         display: none;
         
     }
-    .head-playlist-section {
+    .first-col h4 {
+        display: none;
+    }
+
+    .head-playlist-section .playlist-ul {
+        display: none;
+    }
+
+    .second-col span {
         display: none;
     }
 
@@ -394,6 +502,16 @@ width: 30%;
         width: 30px;
     }
    
+    .user-img {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+
+    .download-img {
+        width: 45px;
+        height: 40px;
+    }
 
 
 }

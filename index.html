@@ -11,30 +11,30 @@
 <body>
     <div class="sidebar-main" >
         <aside>
-            <div class="head-sidebar" >
-                <div class="head-img" >
-                    <img id="logo-small" src="./img/logo-small.svg" alt="">
-                    <img src="./img/logo.svg" alt="">
-                </div>
-                <div class="desktop-list" >
-                    <ul>
-                        <li>
-                            <img src="./img/home.svg" alt=""><span class="text-grey" >Home</span>    
-                        </li>
-                        <li>
-                            <img src="./img/search.svg" alt=""><span class="text-grey" >Cerca</span>
-                        </li>
-                        <li>
-                            <img src="./img/libreria.svg" alt=""><span class="text-grey" >La tua libreria</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <div class="head-playlist-section" >
                 <div class="first-col" >
+                    <div class="head-sidebar" >
+                        <div class="head-img" >
+                            <img id="logo-small" src="./img/logo-small.svg" alt="">
+                            <img src="./img/logo.svg" alt="">
+                        </div>
+                        <div class="desktop-list" >
+                            <ul>
+                                <li>
+                                    <img src="./img/home.svg" alt=""><span class="text-grey" >Home</span>    
+                                </li>
+                                <li>
+                                    <img src="./img/search.svg" alt=""><span class="text-grey" >Cerca</span>
+                                </li>
+                                <li>
+                                    <img src="./img/libreria.svg" alt=""><span class="text-grey" >La tua libreria</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <h4 class="text-white" >PLAYLIST</h4>
                     <h4 class="text-white" ><i class="fa-solid fa-plus"></i> Crea Playlist</h4>
-                    <div>
+                    <div class="playlist-ul" >
                         <ul>
                             <li>Nome Playlist</li>
                             <li>Nome Playlist</li>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="second-col" >
-                    <img src="./img/download.svg" alt=""> <span class="text-grey" >Installa App</span>
+                    <img  class="download-img" src="./img/download.svg" alt=""> <span class="text-grey" >Installa App</span>
                     <hr>
                     <div class="user-card" >
                         <img class="user-img"  src="./img/profile.svg" alt=""><span class="text-white" >John Doe</span>
@@ -88,19 +88,25 @@
                 </div>         
                 <div class="recently-played-section margin-top-20" >
                     <h3 class="text-white padding-10">Recently Played</h3>
-                    <div class="container-recently-played" >
+                    <divc class="container-recently-played" >
                         <div class="row-recently-played" >
                             <div class="col-recently-played" >
                                 <div class="playlist-img" >
+                                    <div class="opacity-play-button-background" >
+                                        <div class="opacity-play-button"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+                                    </div>
                                     <img src="./img/metal_lifting.jpg" alt="">
                                 </div>
                                 <div class="playlist-name" >
-                                    <h3 class="text-white padding-10" >Heavy Mertal</h3>
+                                    <h3 class="text-white padding-10" >Heavy Metal</h3>
                                     <p class="text-grey padding-10" >Subtitle</p>
                                 </div>
                             </div>
                             <div class="col-recently-played" >
                                 <div class="playlist-img" >
+                                    <div class="opacity-play-button-background" >
+                                        <div class="opacity-play-button"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+                                    </div>
                                     <img src="./img/stranger.jpeg" alt="">
                                 </div>
                                 <div class="playlist-name" >
@@ -110,6 +116,9 @@
                             </div>
                             <div class="col-recently-played" >
                                 <div class="playlist-img" >
+                                    <div class="opacity-play-button-background" >
+                                        <div class="opacity-play-button"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+                                    </div>
                                     <img src="./img/aquietplace.jpeg" alt="">
                                 </div>
                                 <div class="playlist-name" >
@@ -119,6 +128,9 @@
                             </div>
                             <div class="col-recently-played" >
                                 <div class="playlist-img" >
+                                    <div class="opacity-play-button-background" >
+                                        <div class="opacity-play-button"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+                                    </div>
                                     <img src="./img/split.jpeg" alt="">
                                 </div>
                                 <div class="playlist-name" >
@@ -128,6 +140,9 @@
                             </div>
                             <div class="col-recently-played" >
                                 <div class="playlist-img" >
+                                    <div class="opacity-play-button-background" >
+                                        <div class="opacity-play-button"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+                                    </div>
                                     <img src="./img/cure.jpeg" alt="">
                                 </div>
                                 <div class="playlist-name" >
@@ -137,6 +152,9 @@
                             </div>
                             <div class="col-recently-played" >
                                 <div class="playlist-img" >
+                                    <div class="opacity-play-button-background" >
+                                        <div class="opacity-play-button"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+                                    </div>
                                     <img src="./img/sinister.jpeg" alt="">
                                 </div>
                                 <div class="playlist-name" >
@@ -202,15 +220,15 @@
         <div class="container-footer">
             <div class="row-footer">
                 <div class="col-footer-30 " >
-                    <div class="content-footer justify-content-start " >
+                    <div class="content-col-footer-30 justify-content-start " >
                         <div class="padding-10" >
                             <img src="./img/sinister.jpeg" alt="">
                         </div>
-                        <div class="" >
+                        <div>
                             <h3 class="text-white font-size-10" >Sinister</h3>
                             <p class="text-grey font-size-10 " >Brano nome</p>
                         </div>
-                        <div class="margin-left-40" >
+                        <div class="margin-left-10" >
                             <i class="fa-regular fa-heart text-grey"></i>
                             <i class="fa-regular fa-folder text-grey "></i>
                         </div>
@@ -219,7 +237,7 @@
                 </div>
                 <div class="col-footer-40" >
                     <div class="content-footer" >
-                        <div>
+                        <div class="first-card-footer"  >
                             <ul>
                                 <li><i class="fa-solid fa-shuffle"></i></li>
                                 <li><i class="fa-solid fa-backward-step"></i></li>
@@ -228,16 +246,19 @@
                                 <li><i class="fa-solid fa-repeat"></i></li>
                             </ul>     
                         </div>
+                        <div class="second-card-footer" >
+                           <span>0:25</span><div class="song-bar"></div><span>4:35</span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-footer-30" >
-                    <div class="content-footer justify-content-end" >
+                    <div class="content-col-footer-30 justify-content-end" >
                         <ul>
                             <li><i class="fa-solid fa-bars"></i></li>
                             <li><i class="fa-solid fa-desktop"></i></li>
                             <li><i class="fa-solid fa-volume-low"></i></li>
-                            
                         </ul>
+                        <div class="volume-bar" ></div>
                     </div>
                 </div>
             </div>
