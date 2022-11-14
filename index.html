@@ -259,7 +259,12 @@
                             </ul>     
                         </div>
                         <div class="second-card-footer" >
-                           <span>0:25</span><div class="song-bar"></div><span>4:35</span>
+                            <div class="song-bar" >
+                                <label class="text-white"  for="music-range">0:25</label>
+                                <input type="range" id="music-range" name="music-range"
+                                       min="0" max="100">
+                                <label class="text-white" for="music-range">4:35</label>
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -270,7 +275,10 @@
                             <li><i class="fa-solid fa-desktop"></i></li>
                             <li><i class="fa-solid fa-volume-low"></i></li>
                         </ul>
-                        <div class="volume-bar" ></div>
+                        <div class="volume-bar" >
+                            <input type="range" id="music-range" name="music-range"
+                                   min="0" max="100">    
+                        </div>
                     </div>
                 </div>
             </div>

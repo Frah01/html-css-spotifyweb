@@ -444,24 +444,30 @@ width: 30%;
 
 .song-bar {
     width: 80%;
-    height: 5px;
-    background-color: grey;
-    border-radius: 10px;
-    margin: 5px;
+    display: flex;
+    align-items: center;
     
 }
 
 .volume-bar {
-    width: 150px;
-    height: 5px;
-    background-color: grey;
-    border-radius: 10px;
-    margin: 10px;
+   width: 30%;
+   display: flex;
+   align-items: center;
 }
 
 .content-col-footer-30 {
     width: 100%;
 }
+
+#music-range {
+    width: 100%;
+    margin: 10px;
+    accent-color: white;
+}
+#music-range:hover {
+    accent-color: lightgreen
+}
+
 
 
 .first-card-footer li:hover {
