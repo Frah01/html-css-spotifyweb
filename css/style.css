@@ -97,6 +97,9 @@ p {
     padding-bottom: 50px;
 }
 
+.border-radius-50{
+    border-radius: 50%;
+}
 /*SIDEBAR*/
 /*SIDEBAR HEAD SECTION*/
 .head-sidebar ul {
