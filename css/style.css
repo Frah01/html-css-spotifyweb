@@ -23,7 +23,7 @@ main {
     width: 100%;
     height: 100%;
     padding: 10px;
-    overflow: auto;
+    
 }
 header {
     width: calc(100vw - 200px);
@@ -463,6 +463,26 @@ width: 30%;
     width: 100%;
 }
 
+
+.first-card-footer li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.content-col-footer-30 li:hover {
+    color: white ;
+    cursor: pointer;
+}
+
+.content-col-footer-30 .fa-regular:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.content-col-footer-30 h3, p:hover {
+    color: white;
+    cursor: pointer;
+}
 /*MEDIA QUERY*/
 
 @media screen and (max-width: 768px) {
@@ -471,7 +491,7 @@ width: 30%;
 }
 }
 
-@media screen and (max-width: 605px) {
+@media screen and (max-width: 640px) {
     aside {
         width: 50px;
     }
