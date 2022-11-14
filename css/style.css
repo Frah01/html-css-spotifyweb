@@ -542,5 +542,14 @@ width: 30%;
         height: 40px;
     }
 
-
+    .desktop-list li:hover {
+        cursor: pointer;
+        color: white;
+    }
+    .download-img:hover{
+        cursor: pointer;
+    }
+    .user-img:hover{
+        cursor: pointer;
+    }
 }
