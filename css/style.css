@@ -264,6 +264,7 @@ header a:hover {
 
 .nav-container ul {
     display: flex;
+    justify-content: space-around;
     list-style-type: none;
     font-weight: bold;
     text-align: center;
@@ -273,7 +274,20 @@ header a:hover {
 .nav-container li {
     margin: 10px;
     cursor: pointer;
+    
 }
+
+
+.green-line {
+    background-color: rgb(6, 206, 6);
+    margin: 5px auto;
+    width: 50%;
+    height: 3px;
+
+}
+
+
+
 
 .nav-container li:hover {
     color: white;
@@ -292,6 +306,7 @@ header a:hover {
     flex-wrap: wrap;
 
 }
+
 
 .col-recently-played {  
     text-align: center;
@@ -541,6 +556,9 @@ width: 30%;
     .download-img {
         width: 45px;
         height: 40px;
+    }
+    .head-sidebar li img {
+        width: 30px;
     }
 
     .desktop-list li:hover {
