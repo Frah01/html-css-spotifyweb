@@ -278,13 +278,18 @@ header a:hover {
     
 }
 
-
-.green-line {
-    background-color: rgb(6, 206, 6);
-    margin: 5px auto;
-    width: 50%;
+.nav-container li:hover .green-line {
+    width: 60%;
     height: 3px;
+    background-color: rgb(6, 206, 6);
+    
+}
 
+.green-line { 
+    margin: 5px auto;
+    width: 20%;
+    height: 3px;
+    transition: all 0.5s ease;
 }
 
 
@@ -308,10 +313,13 @@ header a:hover {
 
 }
 
-
 .col-recently-played {  
     text-align: center;
     margin: 10px;
+}
+
+.playlist-title{
+    cursor: pointer;
 }
 .playlist-img {
     object-fit: contain;
