@@ -167,6 +167,7 @@ p {
 
 .head-playlist-section li {
     padding: 10px;
+    font-weight: bold;
 }
 
 .head-playlist-section .second-col img {
