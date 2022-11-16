@@ -324,7 +324,12 @@ header a:hover {
 
 .playlist-name h3{
     cursor: pointer;
+    font-size: 18px;
 } 
+
+.playlist-name p {
+    font-size: 13px;
+}
 .playlist-img {
     object-fit: contain;
     position: relative;
