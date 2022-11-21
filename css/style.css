@@ -38,6 +38,7 @@ footer {
     height: 100px;
     width: 100vw;
     background-color: #282828;
+    position: fixed;
 }
 
 .sidebar-main {
@@ -132,7 +133,7 @@ p {
 /*SIDEBAR PLAYLIST SECTION*/
 
 .head-playlist-section .first-col {
-    overflow: auto;
+
 }
 
 .mobile-list {
@@ -163,6 +164,7 @@ p {
 
 .playlist-overflow {
     overflow: auto;
+    height: 150px;
 }
 
 .head-playlist-section li {
